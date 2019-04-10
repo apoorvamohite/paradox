@@ -55,7 +55,7 @@
                                         <i class="now-ui-icons ui-1_email-85"></i>
                                     </span>
                                 </div>
-                                <input name="email" id="email" type="text" class="form-control" placeholder="Email...">
+                                <input name="email" id="email" type="email" class="form-control" placeholder="Email...">
                             </div>
                             <div class="input-group input-lg">
                                 <div class="input-group-prepend">
@@ -66,7 +66,7 @@
                                 <input name="clgname" id="clgname" type="text" class="form-control" placeholder="College...">
                             </div>
                             <div class="send-button">
-                                <input class="btn btn-primary btn-round btn-block btn-lg" value="Register" data-toggle="modal" data-target="#myModal" id="submitBtn" name="btn" type="button" />
+                                <input class="btn btn-primary btn-round btn-block btn-lg" value="Register" id="submitBtn" name="btn" type="button" />
                             </div>
                         </form>
                     </div>
@@ -105,6 +105,10 @@
                         <th>College:</th>
                         <td id="mclgname"></td>
                     </tr>
+                    <tr>
+                        <th>Amount:</th>
+                        <td>Rs. 250/-</td>
+                    </tr>
                 </table>
               </div>
               <div class="modal-footer">
@@ -131,24 +135,19 @@
     <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
     <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
     <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-    <script src="./assets/js/plugins/bootstrap-switch.js"></script>
-    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-    <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-    <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-    <script src="./assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
-    <!--  Google Maps Plugin    -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-    <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
     <script src="./assets/js/now-ui-kit.js?v=1.2.0" type="text/javascript"></script>
     <script type="text/javascript">
         $('#submitBtn').click(function() {
-             /* when the button in the form, display the entered values in the modal */
-             $('#mname').text($('#name').val());
-             $('#musn').text($('#usn').val());
-             $('#mphone').text($('#phone').val());
-             $('#memail').text($('#email').val());
-             $('#mclgname').text($('#clgname').val());
+        	if($("#name").val()!="" && $("#usn").val()!="" && $("#phone").val()!="" && $("#email").val()!="" && $("#clgname").val()!=""){
+        		/* when the button in the form, display the entered values in the modal */
+        		$('#myModal').modal('show');
+        		$('#mname').text($('#name').val());
+        		$('#musn').text($('#usn').val());
+        		$('#mphone').text($('#phone').val());
+        		$('#memail').text($('#email').val());
+        		$('#mclgname').text($('#clgname').val());
+        	}
+             
         });
 
         $('#submit').click(function(){

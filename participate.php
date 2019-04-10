@@ -1,3 +1,31 @@
+<?php
+$min[0]=1;
+$max[0]=4;
+$title[0]="Ignite";
+
+$min[1]=2;
+$max[1]=2;
+$title[1]="Terra Mind";
+
+$min[2]=1;
+$max[2]=1;
+$title[2]="Utopian";
+
+$min[3]=1;
+$max[3]=3;
+$title[3]="Rotolare";
+
+$min[4]=2;
+$max[4]=2;
+$title[4]="Minute to win it";
+
+$min[5]=1;
+$max[5]=1;
+$title[5]="Draft your craft";
+
+$event = $_GET['id'];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,29 +44,34 @@
             <div class="content-center">
                 <div class="container">
                     <h3 style="font-family: 'Cabin Sketch', cursive;">PARADOX '19</h3>
-                    <h1 id="heading" class="h1" style="font-family: 'Cabin Sketch', cursive;">INVOICE</h1>
+                    <h1 id="heading" class="h1" style="font-family: 'Cabin Sketch', cursive;">PARTICIPATE</h1>
                 </div>
             </div>
         </div>
-        <div class="section section-contact-us">
+        <div class="text-center">
+            <div class="title h2"><?php echo $title[$event]; ?></div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
-                        <h4><strong>Invoice Number: </strong><br></h4>
-                        <center>
-                            <div align="left">
-                                USN: <br>
-                                Customer ID: <br>
-                                Email: <br>
-                                Phone: <br>
-                                Payment status: <br>
-                                Transaction ID: <br>
-                                Bank Transaction ID: <br>
-                                Amount: <br>
+                        <form method="POST" action="event<?php echo $event+1; ?>.php" id="formfield">
+                            <?php
+                            for ($i=0; $i <$max[$event] ; $i++) {
+                            ?>
+                            <div class="input-group input-lg">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="now-ui-icons users_circle-08"></i>
+                                    </span>
+                                </div>
+                                <input name="member<?php echo $i+1; ?>" id="m<?php echo $i; ?>" type="text" class="form-control" placeholder="Member <?php echo $i+1; ?> Invoice number..." <?php if($i<$min[$event]){ echo "required"; } ?>>
                             </div>
-                        </center>
-                        <h5>Thank you for registering!</h5>
-                        <h6>Please save a screenshot of the above for further reference.</h6>
+                            <?php
+                            }
+                            ?>
+                            <div class="send-button">
+                                <input class="btn btn-primary btn-round btn-block btn-lg" value="Participate" type="submit" />
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

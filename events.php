@@ -45,8 +45,8 @@
                             <div class="card-body">
                                 <!-- Tab panes -->
                                 <div class="tab-content">
-                                    <div class="tab-pane active" id="home1" role="tabpanel">
-                                        <p></p>
+                                    <div class="tab-pane active text-center" id="home1" role="tabpanel">
+                                        <img src="./assets/img/1.jpg" width="75%">
                                     </div>
                                     <div class="tab-pane" id="profile1" role="tabpanel">
                                         <p>“IGNITE” is an event based on startup ideas. The idea must be related to Civil Engineering.
@@ -61,6 +61,9 @@
 											<li>Balaram Kadam -9632462835</li>
 										</ul>
 										</p>
+										<center>
+											<a href="participate.php?id=0" class="btn btn-primary btn-round btn-lg" >Participate</a>
+										</center>
                                     </div>
                                 </div>
                             </div>
@@ -86,8 +89,8 @@
                             <div class="card-body">
                                 <!-- Tab panes -->
                                 <div class="tab-content">
-                                    <div class="tab-pane active" id="home2" role="tabpanel">
-                                        <p></p>
+                                    <div class="tab-pane active text-center" id="home2" role="tabpanel">
+                                        <img src="./assets/img/2.jpg" width="75%">
                                     </div>
                                     <div class="tab-pane" id="profile2" role="tabpanel">
                                         <p>“Terra mind” is a technical quiz. Questions will be based on civil engineering discipline only.
@@ -102,6 +105,9 @@
 											<li>Jayesh Nandyalkar -9964906145</li>
 										</ul>
 										</p>
+										<center>
+											<a href="participate.php?id=1" class="btn btn-primary btn-round btn-lg" >Participate</a>
+										</center>
                                     </div>
                                 </div>
                             </div>
@@ -128,8 +134,8 @@
                             <div class="card-body">
                                 <!-- Tab panes -->
                                 <div class="tab-content">
-                                    <div class="tab-pane active" id="home3" role="tabpanel">
-                                        <p></p>
+                                    <div class="tab-pane active text-center" id="home3" role="tabpanel">
+                                        <img src="./assets/img/3.jpg" width="75%">
                                     </div>
                                     <div class="tab-pane" id="profile3" role="tabpanel">
                                         <p>A complete package of technical skills and knowledge are to be applied to become a Mr. / Miss. Utopian.
@@ -145,6 +151,9 @@
 												<li>Umakanth Halli -8152804856</li>
 											</ul>
 										</p>
+										<center>
+											<a href="participate.php?id=2" class="btn btn-primary btn-round btn-lg" >Participate</a>
+										</center>
                                     </div>
                                 </div>
                             </div>
@@ -170,8 +179,8 @@
                             <div class="card-body">
                                 <!-- Tab panes -->
                                 <div class="tab-content">
-                                    <div class="tab-pane active" id="home4" role="tabpanel">
-                                        <p></p>
+                                    <div class="tab-pane active text-center" id="home4" role="tabpanel">
+                                        <img src="./assets/img/4.jpg" width="75%">
                                     </div>
                                     <div class="tab-pane" id="profile4" role="tabpanel">
                                         <p>Rotolare event is a ride of marbles on a track. The marble is of glass and the track consists of sudden jumps, drops, loops, turns, and obstacles. The only driving force is of gravitational pull. The time used by marble to ride from starting point to end point and the complexity of the track will be considered for judging.
@@ -191,6 +200,9 @@
 												<li>Manjunath Nagur -9535930203</li>
 											</ul>
 										</p>
+										<center>
+											<a href="participate.php?id=3" class="btn btn-primary btn-round btn-lg" >Participate</a>
+										</center>
                                     </div>
                                 </div>
                             </div>
@@ -217,8 +229,8 @@
                             <div class="card-body">
                                 <!-- Tab panes -->
                                 <div class="tab-content">
-                                    <div class="tab-pane active" id="home5" role="tabpanel">
-                                        <p></p>
+                                    <div class="tab-pane active text-center" id="home5" role="tabpanel">
+                                        <img src="./assets/img/5.jpg" width="75%">
                                     </div>
                                     <div class="tab-pane" id="profile5" role="tabpanel">
                                         <p>The participants are expected to visually identify and guess materials and objects related to the field of study of Civil Engineering. This is to be done in a period of one minute only, as the name suggests. The fastest team wins the prize.
@@ -236,6 +248,9 @@
                                         		<li>Megha Thakkar -8277516740</li>
                                         	</ul>
                                         </p>
+										<center>
+											<a href="participate.php?id=4" class="btn btn-primary btn-round btn-lg" >Participate</a>
+										</center>
                                     </div>
                                 </div>
                             </div>
@@ -261,8 +276,8 @@
                             <div class="card-body">
                                 <!-- Tab panes -->
                                 <div class="tab-content">
-                                    <div class="tab-pane active" id="home6" role="tabpanel">
-                                        <p></p>
+                                    <div class="tab-pane active text-center" id="home6" role="tabpanel">
+                                        <img src="./assets/img/6.jpg" width="75%">
                                     </div>
                                     <div class="tab-pane" id="profile6" role="tabpanel">
                                         <p>Event is based on Civil Software, “AUTOCAD”, skills of the participant.
@@ -278,6 +293,9 @@
                                         		<li>Parshram Shindolkar -8880834167</li>
                                         	</ul>
                                         </p>
+										<center>
+											<a href="participate.php?id=5" class="btn btn-primary btn-round btn-lg" >Participate</a>
+										</center>
                                     </div>
                                 </div>
                             </div>
@@ -303,14 +321,6 @@
     <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
     <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
     <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-    <script src="./assets/js/plugins/bootstrap-switch.js"></script>
-    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-    <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-    <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-    <script src="./assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
-    <!--  Google Maps Plugin    -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
     <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
     <script src="./assets/js/now-ui-kit.js?v=1.2.0" type="text/javascript"></script>
 </body>

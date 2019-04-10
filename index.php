@@ -10,7 +10,7 @@
   <?php require "navbar.html"; ?>
   <!-- End Navbar -->
   <div class="wrapper">
-    <div class="page-header clear-filter" filter-color="">
+    <div class="page-header clear-filter" filter-color="orange">
       <div class="page-header-image" data-parallax="false" style="background-image:url('./assets/img/header.jpg');">
       </div>
       <div class="container">
@@ -21,12 +21,12 @@
           <button class="btn btn-primary btn-round" data-toggle="modal" data-target="#myModal" id="mybutt">
             <i class="now-ui-icons travel_info"></i> &nbsp; Help &nbsp;
           </button>
-          <button class="btn btn-primary btn-lg btn-neutral btn-round" type="button">
+          <a href="register.php" class="btn btn-primary btn-lg btn-neutral btn-round">
             <i class="now-ui-icons ui-1_send"></i> &nbsp; Register &nbsp;
-          </button>
-          <button class="btn btn-primary btn-round" type="button">
+          </a>
+          <a href="events.php" class="btn btn-primary btn-round">
             <i class="now-ui-icons sport_trophy"></i> Participate
-          </button>
+          </a>
         </div>
         <div style="position: absolute; bottom: 0; right: 0; float: right;">
           <span class="h4">👑</span>
@@ -92,31 +92,8 @@
   <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
   <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
   <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-  <script src="./assets/js/plugins/bootstrap-switch.js"></script>
-  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-  <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-  <script src="./assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
-  <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
   <script src="./assets/js/now-ui-kit.js?v=1.2.0" type="text/javascript"></script>
-  <script>
-    $(document).ready(function() {
-      // the body of this function is in assets/js/now-ui-kit.js
-      nowuiKit.initSliders();
-    });
-
-    function scrollToDownload() {
-
-      if ($('.section-download').length != 0) {
-        $("html, body").animate({
-          scrollTop: $('.section-download').offset().top
-        }, 1000);
-      }
-    }
-  </script>
 </body>
 
 </html>
